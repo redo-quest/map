@@ -31,7 +31,7 @@ locations.forEach(location => {
 function fetchPing(location) {
     return new Promise((resolve, reject) => {
         var startTime = performance.now();
-        fetch(`http://45.131.109.251:3000/proxy?url=${encodeURIComponent(location.url)}`)
+        fetch(`https://proxy.cloudnest.wtf/proxy?url=${encodeURIComponent(location.url)}`)
             .then(response => {
                 var endTime = performance.now();
                 if (response.ok) {
