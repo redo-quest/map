@@ -17,7 +17,6 @@ locations.forEach(location => {
             if (ping !== null) {
                 marker.bindPopup(`<b>${location.name}</b><br>Ping: ${ping}ms`);
                 marker.on('click', function() {
-                    alert(`Your ping to ${location.name}: ${ping}ms`);
                 });
             } else {
                 marker.bindPopup(`<b>${location.name}</b><br>Failed to fetch ping data`);
